@@ -5,8 +5,7 @@ class List extends Component {
         super(props);
 
         this.state = {
-            list: props.list,
-            count: 0
+            list: props.list
         };
     }
 

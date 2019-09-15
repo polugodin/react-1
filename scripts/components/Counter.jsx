@@ -6,7 +6,7 @@ class Counter extends Component {
 
         this.state = {
             msg: props.msg,
-            count: 0    
+            count: props.count    
         };
 
         this.onIncrease = this.onIncrease.bind(this);

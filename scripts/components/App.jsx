@@ -14,16 +14,17 @@ class App extends Component {
                 { task: 'todo something2'},
                 { task: 'todo something3'},
                 { task: 'todo something4'}
-            ]
+            ],
+            count: 0
         }
     }
 
     render() {
-        const { msg, list } = this.state;
+        const { msg, list, count } = this.state;
 
         return (
             <div>
-                <Counter msg={msg}/>
+                <Counter msg={msg} count={count} />
                 <List list={list} />
             </div>
         );
